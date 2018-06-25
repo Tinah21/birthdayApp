@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="width: 100%;">
+  <div style=" width:40%;float:left;border:solid 1px black;">
+
+    <h1>Uppercase pipe</h1>
+    <p>{{title | uppercase}}</p>
+    <br/>
+
+    <h1>Lowercase pipe</h1>
+    <p>{{title | lowercase}}</p>
+    <br/>
+
+    <h1>Currency pipe</h1>
+    <p>{{6589.23 | currency: USD}}</p>
+    <br/>
+    <p>{{6589.23 | currency: USD: true}}</p>
+    <br/>
+
+    <h1>Date pipe</h1>
+    <p>{{todaydate | date: 'd/m/y'}}</p>
+    <p>{{todaydate | date: 'shortTime'}}</p>
+
+    <h1>Decimal Pipe</h1>
+    <b>{{ 454.78787814 | number: '3.4-4' }}</b>
+  </div>
+  <div style ="width:40%;float:left;border:solid 1px black;">
+
+    <h1>Json pipe</h1>
+    <p>{{jsonval | json}}</p><br/>
+    
+    <h1>Percentage pipe</h1>
+    <p>{{00.54565 | percent}}</p><br/>
+
+    <h1>Slice pipe</h1>
+    <p>{{months |slice:2:6}}</p>
+  </div>
+
+
+</div>
