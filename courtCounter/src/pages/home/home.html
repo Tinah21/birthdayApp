@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="orange">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+ 
+
+ <div id="teama">
+    <h1 >Team A</h1><br>
+    <ion-label>{{score}}</ion-label><br>
+    <button  ion-button color="orange" (click)="click3()"> +3 Points</button><br>
+    <button  ion-button color="orange" (click)="click2()"> +2 Points</button><br>
+    <button   ion-button color="orange" (click)="click1()"> Free throw</button><br>
+   
+ </div>
+
+ <div id="teamb">
+    <h1>Team B</h1><br>
+    <ion-label>{{score1}}</ion-label><br>
+    <button  ion-button color="orange" (click)="click30()"> +3 Points</button><br>
+    <button  ion-button color="orange" (click)="click20()"> +2 Points</button><br>
+    <button   ion-button color="orange" (click)="click10()"> Free throw</button><br>
+
+ </div>
+   
+
+  
+
+      <button id="clear" ion-button color="orange" (click)="clear()"> clear</button>
+
+
+
+
+</ion-content>
