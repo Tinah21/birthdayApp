@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="brown">
+    <ion-title>
+      Order Coffee
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+      <ion-input  class="name" type="text" [(ngModel)]="name" id="name"></ion-input>
+  </ion-item>
+  
+  <br>
+  
+  <p id="top">TOPPINGS</p>
+  <ion-item>
+    <ion-label>Whipped Cream</ion-label>
+    <ion-checkbox class="check1" [(ngModel)]="value1" color="dark" checked = "false" ></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Chocolate</ion-label>
+    <ion-checkbox class="check2" [(ngModel)]="value2" color="dark" checked ="false" ></ion-checkbox>
+  </ion-item>
+
+  <p id="qua">QUANTITY</p>
+
+<div id="signs" style="text-align: center">
+    <button   ion-button  (click)="add()" >+</button>
+    {{increment}}
+    <button  ion-button (click)="minus()">-</button>
+</div>
+    
+    <br>
+ 
+<div id="me" >
+    <p>Order Summary</p>
+</div>
+  
+  
+  <div *ngIf="summary">
+    Name:{{name}}<br>
+    {{val1}}<br>
+    {{val}}<br>
+    Quantity:{{increment}}<br>
+    Total:${{total}}<br>
+    {{message}}
+   
+    
+    </div>
+ <div id="orde">
+    <button ion-button (click)="onOrder()">Order</button>
+ </div>
+  
+  <br>
+  <button ion-button (click)="reset()">Reset</button>
+  <button ion-button id="email">Email Order</button>
+
+  
+
+
+</ion-content>
